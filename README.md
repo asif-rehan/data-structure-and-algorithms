@@ -21,7 +21,7 @@ solutions to practice problems and implementations of data structure and algorit
 5. Merge Sort
 6. Quick Sort
 
-### Searching
+#### Searching
 1. Linear Search
 2. Depth-First Search (DFS)
 3. Breadth-First Search (BFS)
