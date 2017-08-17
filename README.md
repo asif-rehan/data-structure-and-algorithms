@@ -2,7 +2,7 @@
 solutions to practice problems and implementations of data structure and algorithms 
 
 # Items
-## Data Structures
+### Data Structures
 1. Lists 
 2. Arrays
 3. Stacks
@@ -12,8 +12,8 @@ solutions to practice problems and implementations of data structure and algorit
 7. Binary Search Trees
 8. Red-Black Trees
 
-## Algorithms
-### Sorting
+### Algorithms
+#### Sorting
 1. Bubble Sort
 2. Selection Sort
 3. Insertion Sort
@@ -21,7 +21,7 @@ solutions to practice problems and implementations of data structure and algorit
 5. Merge Sort
 6. Quick Sort
 
-## Searching
+### Searching
 1. Linear Search
 2. Depth-First Search (DFS)
 3. Breadth-First Search (BFS)
