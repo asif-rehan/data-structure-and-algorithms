@@ -9,7 +9,7 @@ public class BubbleSort {
 		------------
 		for element from the left towards the right
 			for each element 
-			find the minimum out of everything to its right
+			if it is smaller than the current value
 			swap the smallest at the current position
 		move to the next towards right
 			 */
