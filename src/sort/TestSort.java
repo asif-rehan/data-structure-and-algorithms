@@ -12,19 +12,19 @@ public class TestSort {
 		
 		*/
 		
-		int[] unsortedTestArray = initializeRandomArray();
+		int[] unsortedTestArray = initializeRandomArray(11);
 		System.out.println("Unsorted Array=======");
 		printElements(unsortedTestArray);
 		
-		int[] sortedArray = new BubbleSort().Sort(unsortedTestArray);
+		int[] sortedArray = new SelectionSort().sort(unsortedTestArray);
 		System.out.println("sorted");
 		printElements(sortedArray);
 	}
 
-	private static int[] initializeRandomArray() {
+	private static int[] initializeRandomArray(int max) {
 		Random rand = new Random();
-		Integer len = rand.nextInt(10);
-		int[] arr = rand.ints(len, 0, len).toArray();
+		Integer len = rand.nextInt(max);
+		int[] arr = rand.ints(len, 1, len).toArray();
 		System.out.print("len" + String.valueOf(len));
 		return arr;
 	}
