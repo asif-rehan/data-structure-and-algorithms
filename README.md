@@ -15,7 +15,7 @@ solutions to practice problems and implementations of data structure and algorit
 
 ### Algorithms
 #### Sorting
-1. [Bubble Sort](https://github.com/re-han/data-structure-and-algorithms/blob/master/src/BubbleSort.java "Bubble Sort")
+1. [Bubble Sort](https://github.com/re-han/data-structure-and-algorithms/blob/master/src/BubbleSort.java)
 2. [Selection Sort](https://github.com/re-han/data-structure-and-algorithms/blob/master/src/sort/SelectionSort.java)
 3. [Insertion Sort](https://github.com/re-han/data-structure-and-algorithms/blob/master/src/sort/InsertionSort.java)
 4. Heap Sort
