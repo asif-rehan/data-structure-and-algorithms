@@ -1,5 +1,6 @@
 package sort;
 
+import java.util.ArrayList;
 import java.util.Random;
 import sort.BubbleSort;
 
@@ -12,26 +13,60 @@ public class TestSort {
 		
 		*/
 		
-		int[] unsortedTestArray = initializeRandomArray(11);
-		System.out.println("Unsorted Array=======");
+		int[] unsortedTestArray;
+		int[] sortedArray;
+		ArrayList<Integer> unsortedTestArrayList;
+		ArrayList<Integer> sortedArrayList;
+		
+		unsortedTestArray = initializeRandomArray(11);
+		unsortedTestArrayList = initializeRandomArrayList(20);
+
+		System.out.println("===========Unsorted Array=======");
 		printElements(unsortedTestArray);
 		
-		int[] sortedArray = new SelectionSort().sort(unsortedTestArray);
-		System.out.println("sorted");
+		System.out.println("\n=====Selection Sort=======");
+		sortedArray = new SelectionSort().sort(unsortedTestArray);
 		printElements(sortedArray);
+		
+		System.out.println("\n=====Bubble Sort=======");
+		sortedArray = new BubbleSort().sort(unsortedTestArray);
+		printElements(sortedArray);
+		
+		
+		System.out.println("\n\n====Unsorted ArrayList====");
+		printElements(unsortedTestArrayList);
+		
+		System.out.println("\n=====Insertion Sort=======");
+		sortedArrayList = new InsertionSort().sort(unsortedTestArrayList);
+		printElements(sortedArrayList);
 	}
 
 	private static int[] initializeRandomArray(int max) {
 		Random rand = new Random();
-		Integer len = rand.nextInt(max);
-		int[] arr = rand.ints(len, 1, len).toArray();
-		System.out.print("len" + String.valueOf(len));
+		int[] arr = rand.ints(max, 1, max).toArray();
 		return arr;
 	}
+	private static ArrayList<Integer> initializeRandomArrayList(int max) {
+		Random rand = new Random();
+		ArrayList<Integer> arrL = new ArrayList<Integer>(max);
+		int[] arr = rand.ints(max, 1, max).toArray();
+		for (int i : arr) {
+			arrL.add(i);
+			
+		}
+		return arrL;
+	}
+
 
 	private static void printElements(int[] arr) {
 		for (int j = 0; j < arr.length; j++) {
-			System.out.println(arr[j]);
+			System.out.print(arr[j] + " ");
+		}
+	}
+	
+	private static void printElements(ArrayList<Integer> arr) {
+		for (Integer j: arr) {
+			System.out.print(j + " ");
 		}
 	}
 
