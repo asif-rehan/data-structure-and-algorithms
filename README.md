@@ -10,7 +10,7 @@ solutions to practice problems and implementations of data structure and algorit
 5. Bags
 6. Union-find
 7. Priority Queues
-8. Heaps
+8. [Heaps](https://github.com/re-han/data-structure-and-algorithms/blob/master/src/sort/Heap.java)
 
 
 ### Algorithms
