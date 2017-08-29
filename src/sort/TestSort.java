@@ -19,7 +19,6 @@ public class TestSort {
 		ArrayList<Integer> sortedArrayList;
 		
 		unsortedTestArray = initializeRandomArray(11);
-		unsortedTestArrayList = initializeRandomArrayList(20);
 
 		System.out.println("===========Unsorted Array=======");
 		printElements(unsortedTestArray);
@@ -27,27 +26,39 @@ public class TestSort {
 		System.out.println("\n=====Selection Sort=======");
 		sortedArray = new SelectionSort().sort(unsortedTestArray);
 		printElements(sortedArray);
+
+		unsortedTestArray = initializeRandomArray(11);
+		System.out.println("\n===========Unsorted Array=======");
+		printElements(unsortedTestArray);
 		
 		System.out.println("\n=====Bubble Sort=======");
 		sortedArray = new BubbleSort().sort(unsortedTestArray);
 		printElements(sortedArray);
 		
-		
+		unsortedTestArrayList = initializeRandomArrayList(20);		
 		System.out.println("\n\n====Unsorted ArrayList====");
 		printElements(unsortedTestArrayList);
 		
 		System.out.println("\n=====Insertion Sort=======");
 		sortedArrayList = new InsertionSort().sort(unsortedTestArrayList);
 		printElements(sortedArrayList);
+		
+		unsortedTestArray = initializeRandomArray(11);
+		System.out.println("\n\n====Unsorted Array====");
+		printElements(unsortedTestArray);
+		
+		System.out.println("\n=====Heap Sort=======");
+		Heap heap = new Heap(unsortedTestArray);
+		printElements(heap.heapArray);
 	}
 
 	private static int[] initializeRandomArray(int max) {
-		Random rand = new Random();
+		Random rand = new Random(123);
 		int[] arr = rand.ints(max, 1, max).toArray();
 		return arr;
 	}
 	private static ArrayList<Integer> initializeRandomArrayList(int max) {
-		Random rand = new Random();
+		Random rand = new Random(456);
 		ArrayList<Integer> arrL = new ArrayList<Integer>(max);
 		int[] arr = rand.ints(max, 1, max).toArray();
 		for (int i : arr) {
@@ -69,5 +80,5 @@ public class TestSort {
 			System.out.print(j + " ");
 		}
 	}
-
+	
 }
