@@ -43,13 +43,18 @@ public class TestSort {
 		sortedArrayList = new InsertionSort().sort(unsortedTestArrayList);
 		printElements(sortedArrayList);
 		
-		unsortedTestArray = initializeRandomArray(11);
-		System.out.println("\n\n====Unsorted Array====");
-		printElements(unsortedTestArray);
+		System.out.println("\n\n=====Heap Sort=======");
 		
-		System.out.println("\n=====Heap Sort=======");
-		Heap heap = new Heap(unsortedTestArray);
+		unsortedTestArrayList = initializeRandomArrayList(11);
+		System.out.println("\n\n====Unsorted Array====");
+		printElements(unsortedTestArrayList);
+		
+		Heap heap = new Heap(unsortedTestArrayList);
+		System.out.println("\n===== Min-Heap structure =======");
 		printElements(heap.heapArray);
+		ArrayList<Integer> sortedHeap = heap.sort();
+		System.out.println("\n===== sorted =======");
+		printElements(sortedHeap);
 	}
 
 	private static int[] initializeRandomArray(int max) {
