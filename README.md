@@ -10,7 +10,7 @@ solutions to practice problems and implementations of data structure and algorit
 5. Bags
 6. Union-find
 7. Priority Queues
-8. Heaps
+8. [Heaps](https://github.com/re-han/data-structure-and-algorithms/blob/master/src/sort/Heap.java)
 
 
 ### Algorithms
@@ -18,7 +18,7 @@ solutions to practice problems and implementations of data structure and algorit
 1. [Bubble Sort](https://github.com/re-han/data-structure-and-algorithms/blob/master/src/sort/BubbleSort.java)
 2. [Selection Sort](https://github.com/re-han/data-structure-and-algorithms/blob/master/src/sort/SelectionSort.java)
 3. [Insertion Sort](https://github.com/re-han/data-structure-and-algorithms/blob/master/src/sort/InsertionSort.java)
-4. Heap Sort
+4. [Heap Sort](https://github.com/re-han/data-structure-and-algorithms/blob/master/src/sort/Heap.java)
 5. Merge Sort
 6. Quick Sort
 7. Radix Sort
