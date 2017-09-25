@@ -55,6 +55,15 @@ public class TestSort {
 		ArrayList<Integer> sortedHeap = heap.sort();
 		System.out.println("\n===== sorted =======");
 		printElements(sortedHeap);
+		
+		System.out.println("\n\n=====Heap Sort2=======");
+		
+		Heap2 heap2 = new Heap2(unsortedTestArrayList);
+		System.out.println("\n===== Min-Heap structure =======");
+		printElements(heap2.heap);
+		heap2.heapSort();
+		System.out.println("\n===== sorted =======");
+		printElements(heap2.heap);
 	}
 
 	private static int[] initializeRandomArray(int max) {
@@ -63,7 +72,7 @@ public class TestSort {
 		return arr;
 	}
 	private static ArrayList<Integer> initializeRandomArrayList(int max) {
-		Random rand = new Random(456);
+		Random rand = new Random(123456789);
 		ArrayList<Integer> arrL = new ArrayList<Integer>(max);
 		int[] arr = rand.ints(max, 1, max).toArray();
 		for (int i : arr) {
