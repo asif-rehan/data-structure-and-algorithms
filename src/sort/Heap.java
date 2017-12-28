@@ -7,7 +7,7 @@ public class Heap {
 	ArrayList<Integer> heap;
 	
 	public Heap(ArrayList<Integer> arr){
-		heap = buildMinHeap(arr, arr.size());
+		heap = buildMaxHeap(arr, arr.size());
 	}
 	
 	public void heapSort() {
@@ -20,7 +20,7 @@ public class Heap {
 		}
 	}
 	
-	public ArrayList<Integer> buildMinHeap(ArrayList<Integer> arr, int len){
+	public ArrayList<Integer> buildMaxHeap(ArrayList<Integer> arr, int len){
 		for (int i = arr.size() / 2; i>=0; i--) {
 			maxHeapify(arr, i, len);
 		}
@@ -41,9 +41,9 @@ public class Heap {
 		}
 		
 		if (maxIndex != i) {
-			int minVal = arr.get(maxIndex);
+			int maxVal = arr.get(maxIndex);
 			arr.set(maxIndex, arr.get(i));
-			arr.set(i, minVal);
+			arr.set(i, maxVal);
 			maxHeapify(arr, maxIndex, len);
 		}
 		
