@@ -3,6 +3,13 @@ package sort;
 import java.util.ArrayList;
 
 public class Heap {
+	/*
+	 	• O(n lg n) worst case.
+			– Like merge sort.
+		• Sorts in place.
+			– Like insertion sort.
+		• Combines the best of both algorithms.
+	*/
 	
 	ArrayList<Integer> heap;
 	
