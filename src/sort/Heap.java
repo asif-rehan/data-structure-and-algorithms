@@ -2,11 +2,11 @@ package sort;
 
 import java.util.ArrayList;
 
-public class Heap2 {
+public class Heap {
 	
 	ArrayList<Integer> heap;
 	
-	public Heap2(ArrayList<Integer> arr){
+	public Heap(ArrayList<Integer> arr){
 		heap = buildMinHeap(arr, arr.size());
 	}
 	
