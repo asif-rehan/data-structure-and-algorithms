@@ -11,48 +11,49 @@ public class Heap2 {
 	}
 	
 	public void heapSort() {
-		for (int i = heap.size()-1; i >= 0; i++) {
+		for (int i = heap.size()-1; i >= 1; i--) {
 			int temp = heap.get(0);
 			heap.set(0, heap.get(i));
 			heap.set(i, temp);
-			minHeapify(heap, 0, i-1);
+			maxHeapify(heap, 0, i-1);
 			
 		}
 	}
 	
 	public ArrayList<Integer> buildMinHeap(ArrayList<Integer> arr, int len){
 		for (int i = arr.size() / 2; i>=0; i--) {
-			minHeapify(arr, i, len);
+			maxHeapify(arr, i, len);
 		}
 		return arr;
 	}
 	
-	private void minHeapify(ArrayList<Integer> arr, int i, int len) {
-		int l = getLeft(i);
-		int r = getRight(i);
-		int min = arr.get(i);
+	private void maxHeapify(ArrayList<Integer> arr, int i, int len) {
+		int l = getLeftIndex(i);
+		int r = getRightIndex(i);
+		int maxIndex = i;
 		
-		if (l < arr.size() && arr.get(l) < arr.get(i)) {
-			min = l;
+		if (l < len && arr.get(l) > arr.get(maxIndex)) {
+			maxIndex = l;
 		}
 		
-		if (l < arr.size() && arr.get(r) < arr.get(i)) {
-			min = r;
+		if (l < len && arr.get(r) > arr.get(maxIndex)) {
+			maxIndex = r;
 		}
 		
-		if (min != i) {
-			int minVal = arr.get(min);
-			arr.set(min, arr.get(i));
+		if (maxIndex != i) {
+			int minVal = arr.get(maxIndex);
+			arr.set(maxIndex, arr.get(i));
 			arr.set(i, minVal);
+			maxHeapify(arr, maxIndex, len);
 		}
 		
 	}
 	
-	private int getLeft(int i){
+	private int getLeftIndex(int i){
 		return 2 * i + 1;
 	}
 	
-	private int getRight(int i){
+	private int getRightIndex(int i){
 		return 2 * i + 2;
 	}
 
