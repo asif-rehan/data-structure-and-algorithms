@@ -3,6 +3,7 @@ package sort;
 import java.util.ArrayList;
 import java.util.Random;
 import sort.BubbleSort;
+import sort.QuickSort;
 
 public class TestSort {
 	
@@ -58,6 +59,16 @@ public class TestSort {
 		heap2.heapSort();
 		System.out.println("\n===== sorted =======");
 		printElements(heap2.heap);
+		
+		
+		System.out.println("\n\nQuick Sort=========");
+		ArrayList<Integer> testArrayList = initializeRandomArrayList(11);
+		System.out.println("\n\n====Unsorted Array====");
+		printElements(testArrayList);
+		QuickSort qs = new QuickSort();
+		qs.sort(testArrayList);
+		System.out.println("sorted array");
+		printElements(testArrayList);
 	}
 
 	private static int[] initializeRandomArray(int max) {
