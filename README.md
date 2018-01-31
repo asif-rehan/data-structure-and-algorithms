@@ -19,7 +19,7 @@ solutions to practice problems and implementations of data structure and algorit
 2. [Selection Sort](https://github.com/re-han/data-structure-and-algorithms/blob/master/src/sort/SelectionSort.java)
 3. [Insertion Sort](https://github.com/re-han/data-structure-and-algorithms/blob/master/src/sort/InsertionSort.java)
 4. [Heap Sort](https://github.com/re-han/data-structure-and-algorithms/blob/master/src/sort/Heap.java)
-5. Merge Sort
+5. [Merge Sort](https://github.com/re-han/data-structure-and-algorithms/blob/master/src/sort/MergeSort.java)
 6. [Quick Sort](https://github.com/re-han/data-structure-and-algorithms/blob/master/src/sort/QuickSort.java)
 7. Radix Sort
 
