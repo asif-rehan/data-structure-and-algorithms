@@ -42,7 +42,7 @@ public class QuickSort {
 		
 		while (i < j) {		/* conditions prevents further running the loop when mid point is reached*/
 			
-			while (!(A.get(i) >=  pivot_value) && i <= pivot_index) {	
+			while (!(A.get(i) >=  pivot_value) && (i <= pivot_index)) {	
 				/*find the element from the left side of the pivot that is 
 				greater or equal to the pivot value
 				It keeps searching from the left tail to the right until 
@@ -52,7 +52,7 @@ public class QuickSort {
 				
 			}
 			
-			while (!(A.get(j) <= pivot_value) && j >= pivot_index) {	
+			while (!(A.get(j) <= pivot_value) && (j >= pivot_index)) {	
 				/*find the element from the right side of the pivot that is 
 				smaller or equal to the pivot value
 				It keeps searching from the right tail to the left until 

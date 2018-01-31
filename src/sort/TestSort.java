@@ -69,6 +69,16 @@ public class TestSort {
 		qs.sort(testArrayList);
 		System.out.println("sorted array");
 		printElements(testArrayList);
+		
+		int[] testArray = initializeRandomArray(11);		
+		System.out.println("\n\n====Merge Array====");
+		printElements(testArray);
+		
+		System.out.println("\n=====Merge Sort=======");
+		MergeSort ms = new MergeSort();
+		ms.sort(testArray);
+		printElements(testArray);
+		
 	}
 
 	private static int[] initializeRandomArray(int max) {
