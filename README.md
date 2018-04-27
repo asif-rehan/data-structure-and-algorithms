@@ -30,8 +30,8 @@ solutions to practice problems and implementations of data structure and algorit
 4. Hash tables
 
 ### Graphs
-1. Breadth-First Search (BFS)
-2. Depth-First Search (DFS)
+1. [Breadth-First Search (BFS)](https://github.com/re-han/data-structure-and-algorithms/blob/master/src/graph_search/BreadthFirstSearch.java)
+2. [Depth-First Search (DFS)](https://github.com/re-han/data-structure-and-algorithms/blob/master/src/graph_search/DepthFirstSearch.java)
 3. Dijkstra's Algorithm
 4. Bellman-Ford Algorithm
 4. Bellman-Ford Algorithm
