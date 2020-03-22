@@ -50,5 +50,44 @@ solutions to practice problems and implementations of data structure and algorit
 3. suffix array
 4. maxflow
 
+#syllabus for CS6515 at Georgia Tech
 
-
+Dynamic programming
+- LIS
+- LCS
+- Knapsack
+- Chain Multiply
+- Shortest paths
+Divide and conquer, including FFT
+- Multiplication
+- Complex Numbers
+- FFT
+- Median
+Randomized algorithms, including:
+- RSA cryptosystem
+-- Modular arithmetic
+-- RSA protocol, Primality testing
+- Randomized rounding
+- Hashing
+-- Bloom filters
+Graph algorithms, including:
+- Strongly connected components
+- Minimum spanning tree
+- PageRank
+- 2SAT
+Max-flow algorithms
+- Ford-Fulkerson algorithm for Max-flow
+- Max-flow=min-cut
+- Image segmentation
+- Flow variant: demands
+- Edmonds-Karp algorithm for max-flow
+Linear programming: 
+- basics
+- Duality and Geometry
+- Max-SAT approx. alg
+NP-completeness
+- NP, Reductions
+- 3-SAT
+- Graph problems
+- Knapsack 
+- Halting problem
