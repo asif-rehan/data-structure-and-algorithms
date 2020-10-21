@@ -1,15 +1,16 @@
 # data-structure-and-algorithms
-solutions to practice problems and implementations of data structure and algorithms. It compiles many courses available online. Including [Coursera's Algorithms (Part I and II)](https://www.coursera.org/learn/algorithms-part1) which mainly is [Princeton's COS226](http://www.cs.princeton.edu/courses/archive/fall17/cos226/syllabus.php). I have included some other contents from outside of the course as well.
+solutions to practice problems and implementations of data structure and algorithms. It compiles many courses available online, including [Georgia Tech's CS6515 Introduction to Graduate Algorithms](https://omscs.gatech.edu/cs-6515-intro-graduate-algorithms)[Coursera's Algorithms (Part I and II)](https://www.coursera.org/learn/algorithms-part1) which mainly is [Princeton's COS226](http://www.cs.princeton.edu/courses/archive/fall17/cos226/syllabus.php). I have included some other contents from outside of the course as well.
 
 # Items
 ### Data Structures
-1. Lists 
+1. [LinkedLists](https://github.com/asif-rehan/data-structure-and-algorithms/blob/master/src/LinkedList/LinkedListNode.java)
 2. Arrays
-3. Stacks
-4. Queues
+3. [Stacks](https://github.com/asif-rehan/data-structure-and-algorithms/blob/master/src/StackQueue/StackImplementation.java)
+4. [Queues](https://github.com/asif-rehan/data-structure-and-algorithms/blob/master/src/StackQueue/QueueImplementation.java)
 5. Bags
 6. Union-find
 7. Priority Queues
+8. [Tree](https://github.com/asif-rehan/data-structure-and-algorithms/blob/master/src/Tree/Tree.java)
 8. [Heaps](https://github.com/re-han/data-structure-and-algorithms/blob/master/src/sort/Heap.java)
 
 
