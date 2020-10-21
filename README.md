@@ -1,5 +1,5 @@
 # data-structure-and-algorithms
-solutions to practice problems and implementations of data structure and algorithms. It compiles many courses available online, including [Georgia Tech's CS6515 Introduction to Graduate Algorithms](https://omscs.gatech.edu/cs-6515-intro-graduate-algorithms)[Coursera's Algorithms (Part I and II)](https://www.coursera.org/learn/algorithms-part1) which mainly is [Princeton's COS226](http://www.cs.princeton.edu/courses/archive/fall17/cos226/syllabus.php). I have included some other contents from outside of the course as well.
+solutions to practice problems and implementations of data structure and algorithms. It compiles many courses available online, including [Georgia Tech's CS6515 Introduction to Graduate Algorithms](https://omscs.gatech.edu/cs-6515-intro-graduate-algorithms) and [Coursera's Algorithms (Part I and II)](https://www.coursera.org/learn/algorithms-part1) which mainly is [Princeton's COS226](http://www.cs.princeton.edu/courses/archive/fall17/cos226/syllabus.php). I have included some other contents from outside of the course as well.
 
 # Items
 ### Data Structures
