@@ -3,9 +3,6 @@ package sort;
 import java.util.ArrayList;
 import java.util.Random;
 
-import sort.BubbleSort;
-import sort.QuickSort;
-
 public class TestSort {
 	
 	

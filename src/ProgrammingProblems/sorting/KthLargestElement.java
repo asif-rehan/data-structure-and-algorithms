@@ -17,7 +17,6 @@ public class KthLargestElement {
     private void quickSelect(int left, int right){
         if (left < right) {
             int p = partition(left, right);
-            //if (p==kSmallest) return;
             
             if (kSmallest <= p) quickSelect(left, p);
             else {
@@ -26,8 +25,7 @@ public class KthLargestElement {
         }
     }
     private int partition(int left, int right){
-        if (left==right) return nums[left];
-        
+
         int p = (left+right)/2;
         int pVal = nums[p];
         int i = left - 1;
