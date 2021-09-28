@@ -25,7 +25,7 @@ public class QuickSortHoare{
         int pivotValue = arr[pivot];
         int i = left-1;
         int j = right+1;
-        System.out.println("p="+String.valueOf(pivot)+" pVal="+String.valueOf(pivotValue));
+       
         while(true){
             do {
                 i++;
@@ -36,17 +36,8 @@ public class QuickSortHoare{
 
             if (i<j) {
                 swap(i, j);
-                for(int t=0;t<arr.length;t++){
-                    System.out.println(String.valueOf(t)+"="+ String.valueOf(arr[t])+" ");
-                }
-                System.out.println("\n");
+ 
             } else {
-                
-                for(int t=0;t<arr.length;t++){
-                    System.out.println(String.valueOf(t)+"="+ String.valueOf(arr[t])+" ");
-                }
-                System.out.println("\n");
-                System.out.println("i"+String.valueOf(i)+" j="+String.valueOf(j));
                 return j;
             }
         }
